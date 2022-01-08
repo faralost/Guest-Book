@@ -5,7 +5,7 @@ from guestbooksapp.models import GuestBookRecord
 
 
 def index(request):
-    records = GuestBookRecord.objects.all()
+    records = GuestBookRecord.objects.filter(status='active').order_by('-created_at')
     return render(request, 'index.html', {'records': records})
 
 
@@ -39,3 +39,12 @@ def record_update(request, pk):
             record.save()
             return redirect('index')
         return render(request, 'record_update.html', {'record': record, 'form': form})
+
+
+def record_delete(request, pk):
+    record = get_object_or_404(GuestBookRecord, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'record_delete.html', {'record': record})
+    elif request.method == 'POST':
+        record.delete()
+        return redirect('index')

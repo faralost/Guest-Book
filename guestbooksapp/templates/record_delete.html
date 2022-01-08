@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Удаление записи{% endblock %}
+
+{% block nav %}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Вы уверены что хотите удалить запись автора: "{{ record.author.title}}"?</h2><br>
+        <form action="{% url 'record_delete' record.pk %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Да</button><br>
+            <br><p><a class="button-link" href="{% url "index" %}">Нет</a></p>
+        </form>
+    </div>
+{% endblock %}

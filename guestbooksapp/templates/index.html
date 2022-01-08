@@ -9,6 +9,7 @@
 {% endblock %}
 
 {% block content %}
+    <h1>Гостевая книга</h1>
     {% for record in records %}
         <br>
         <div class="card" style="width: 18rem;">
@@ -17,6 +18,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">({{ record.email }})</h6>
                 <pre><p class="card-text">{{ record.text.title }}</p></pre>
                 <a href="{% url 'record_update' record.pk %}" class="card-link">Редактировать</a>
+                <a href="{% url 'record_delete' record.pk %}" class="card-link">Удалить</a>
             </div>
         </div>
     {% endfor %}
