@@ -2,6 +2,19 @@
 
 {% block title %}Главная{% endblock %}
 
+{% block content %}
+    {% for record in records %}
+        <br>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ record.author.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">({{ record.email }})</h6>
+                <p class="card-text">{{ record.text.title }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+
 {#{% block nav %}#}
 {#    {% include 'partial/nav.html' %}#}
 {#{% endblock %}#}
