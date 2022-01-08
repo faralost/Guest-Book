@@ -8,7 +8,17 @@
     </li>
 {% endblock %}
 
+
 {% block content %}
+    <br>
+    <form method="get">
+        {% csrf_token %}
+        <div class="mb-3">
+            <input type="text" name="query" class="form-control">
+            <div class="form-text">поиск записи по имени автора</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Искать</button>
+    </form>
     <h1>Гостевая книга</h1>
     {% for record in records %}
         <br>

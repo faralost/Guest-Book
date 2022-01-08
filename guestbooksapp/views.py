@@ -5,7 +5,11 @@ from guestbooksapp.models import GuestBookRecord
 
 
 def index(request):
+    query = request.GET.get('query')
     records = GuestBookRecord.objects.filter(status='active').order_by('-created_at')
+    if query:
+        records = GuestBookRecord.objects.filter(author__icontains=query).order_by('-created_at')
+        return render(request, 'index.html', {'records': records})
     return render(request, 'index.html', {'records': records})
 
 
