@@ -1,0 +1,122 @@
+[
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 2,
+  "fields": {
+    "author": "fsadgdsgsa",
+    "email": "faralost@icloud.com",
+    "text": "gsdgsgasdg\r\nsdgagda",
+    "created_at": "2022-01-08T05:51:44.217Z",
+    "updated_at": "2022-01-08T05:51:44.217Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 4,
+  "fields": {
+    "author": "edy",
+    "email": "edy@mail.ru",
+    "text": "asdsadad",
+    "created_at": "2022-01-08T05:52:28.214Z",
+    "updated_at": "2022-01-08T05:52:28.215Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 9,
+  "fields": {
+    "author": "faralost",
+    "email": "faralost@mail.ru",
+    "text": "sdjflksjdfkjsdklfjsdklafjklsd\r\nfslfms;lfdmls;mfl;sdmfl;msdlfmsakflmkls",
+    "created_at": "2022-01-08T07:17:42.151Z",
+    "updated_at": "2022-01-08T07:17:42.151Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 10,
+  "fields": {
+    "author": "lost",
+    "email": "faralost@icloud.com",
+    "text": "asdasdsad",
+    "created_at": "2022-01-08T07:17:55.078Z",
+    "updated_at": "2022-01-08T07:17:55.078Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 11,
+  "fields": {
+    "author": "atay edylovich",
+    "email": "atay@mail.ru",
+    "text": "dasdasd",
+    "created_at": "2022-01-08T07:18:07.998Z",
+    "updated_at": "2022-01-08T08:30:22.576Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 12,
+  "fields": {
+    "author": "eddy",
+    "email": "eddy@gmail.com",
+    "text": "asdasdas",
+    "created_at": "2022-01-08T07:18:25.146Z",
+    "updated_at": "2022-01-08T07:18:25.146Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 13,
+  "fields": {
+    "author": "Rahat Kupsuldaev",
+    "email": "raha@mail.ru",
+    "text": "readgkldfnklgn sdfj ndskf",
+    "created_at": "2022-01-08T07:18:57.512Z",
+    "updated_at": "2022-01-08T08:30:57.358Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 14,
+  "fields": {
+    "author": "Emir Marat",
+    "email": "emir@mail.ru",
+    "text": "asdlkajk lasd jdslak j\r\n sad",
+    "created_at": "2022-01-08T07:19:21.944Z",
+    "updated_at": "2022-01-08T08:14:54.406Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 18,
+  "fields": {
+    "author": "vase pumpkin",
+    "email": "vasya@mail.ru",
+    "text": "Documentation and examples for\r\nadded",
+    "created_at": "2022-01-08T08:26:31.509Z",
+    "updated_at": "2022-01-08T08:26:31.509Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbooksapp.guestbookrecord",
+  "pk": 19,
+  "fields": {
+    "author": "Jack Harlow",
+    "email": "harlow@gmail.com",
+    "text": "Documentation and examples for \r\nnew day",
+    "created_at": "2022-01-08T08:29:02.973Z",
+    "updated_at": "2022-01-08T08:29:02.973Z",
+    "status": "active"
+  }
+}
+]
