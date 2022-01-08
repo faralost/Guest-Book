@@ -9,5 +9,5 @@ class RecordForm(forms.ModelForm):
         model = GuestBookRecord
         fields = ['author', 'email', 'text']
         widgets = {
-            'text': widgets.Textarea(attrs={'rows': 5, 'cols': 30})
+            'text': widgets.Textarea(attrs={'rows': 5, 'cols': 25})
         }

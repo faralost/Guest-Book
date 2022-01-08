@@ -24,11 +24,20 @@
         <br>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">{{ record.author.title }}</h5>
+                <div class="card-div d-flex justify-content-between">
+                    <div class="card-title-div">
+                        <h5 class="card-title">{{ record.author.title }}</h5>
+                    </div>
+                    <div class="card-icons-div">
+                        <a href="{% url 'record_update' record.pk %}" class="card-link"><i
+                                class="bi bi-pencil-square" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Редактировать запись"></i></a>
+                        <a href="{% url 'record_delete' record.pk %}" class="card-link"><i class="bi bi-trash"
+                          data-bs-toggle="tooltip" data-bs-placement="top" title="Удалить запись"></i></a>
+                    </div>
+                </div>
                 <h6 class="card-subtitle mb-2 text-muted">({{ record.email }})</h6>
-                <pre><p class="card-text">{{ record.text.title }}</p></pre>
-                <a href="{% url 'record_update' record.pk %}" class="card-link">Редактировать</a>
-                <a href="{% url 'record_delete' record.pk %}" class="card-link">Удалить</a>
+                <pre><p class="card-text">{{ record.text.capitalize }}</p></pre>
             </div>
         </div>
     {% endfor %}
