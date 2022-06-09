@@ -1,4 +1,4 @@
-# python_group_10_exam_6_Farkhatzhan_Makhmudov 
+# Guest-Book 
 
 Для запуска проекта установите python версии 3.9 и выше и pip
 
